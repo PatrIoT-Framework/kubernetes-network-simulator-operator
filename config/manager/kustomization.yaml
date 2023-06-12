@@ -12,4 +12,4 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
 - name: controller
-  newName: jsmadis/kubernetes-network-simulator-operator
+  newName: PatrIoT-Framework/kubernetes-network-simulator-operator

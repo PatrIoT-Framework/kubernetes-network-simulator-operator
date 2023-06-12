@@ -18,14 +18,15 @@ package controllers
 
 import (
 	"context"
+	"time"
+
+	networksimulatorv1 "github.com/PatrIoT-Framework/kubernetes-network-simulator-operator/api/v1"
+	"github.com/PatrIoT-Framework/kubernetes-network-simulator-operator/pkg/util"
 	"github.com/go-logr/logr"
-	networksimulatorv1 "github.com/jsmadis/kubernetes-network-simulator-operator/api/v1"
-	"github.com/jsmadis/kubernetes-network-simulator-operator/pkg/util"
 	v12 "k8s.io/api/networking/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
-	"time"
 )
 
 // ManageNetworkPolicyLogic manages whole logic about network policies for the patriot network

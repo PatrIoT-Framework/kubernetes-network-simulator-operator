@@ -26,7 +26,7 @@ spec:
   podSpec:
     containers:
       - name: patriot-data-generator-runner
-        image: jsmadis/patriot-data-generator-runner:listener
+        image: PatrIoT-Framework/patriot-data-generator-runner:listener
         ports:
           - containerPort: 5863
             protocol: UDP

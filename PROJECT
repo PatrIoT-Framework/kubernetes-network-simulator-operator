@@ -4,7 +4,7 @@ plugins:
   manifests.sdk.operatorframework.io/v2: {}
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: patriot-network-simulator
-repo: github.com/jsmadis/kubernetes-network-simulator-operator
+repo: github.com/PatrIoT-Framework/kubernetes-network-simulator-operator
 resources:
 - api:
     crdVersion: v1
@@ -12,7 +12,7 @@ resources:
   domain: patriot-framework.io
   group: network-simulator
   kind: Device
-  path: github.com/jsmadis/kubernetes-network-simulator-operator/api/v1
+  path: github.com/PatrIoT-Framework/kubernetes-network-simulator-operator/api/v1
   version: v1
 - api:
     crdVersion: v1
@@ -20,6 +20,6 @@ resources:
   domain: patriot-framework.io
   group: network-simulator
   kind: Network
-  path: github.com/jsmadis/kubernetes-network-simulator-operator/api/v1
+  path: github.com/PatrIoT-Framework/kubernetes-network-simulator-operator/api/v1
   version: v1
 version: "3"

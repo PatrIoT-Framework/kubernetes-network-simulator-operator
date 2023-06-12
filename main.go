@@ -18,8 +18,9 @@ package main
 
 import (
 	"flag"
-	"github.com/jsmadis/kubernetes-network-simulator-operator/pkg/util"
 	"os"
+
+	"github.com/PatrIoT-Framework/kubernetes-network-simulator-operator/pkg/util"
 
 	// Import all Kubernetes client auth plugins (e.g. Azure, GCP, OIDC, etc.)
 	// to ensure that exec-entrypoint and run can make use of them.
@@ -32,8 +33,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	networksimulatorv1 "github.com/jsmadis/kubernetes-network-simulator-operator/api/v1"
-	"github.com/jsmadis/kubernetes-network-simulator-operator/controllers"
+	networksimulatorv1 "github.com/PatrIoT-Framework/kubernetes-network-simulator-operator/api/v1"
+	"github.com/PatrIoT-Framework/kubernetes-network-simulator-operator/controllers"
 	//+kubebuilder:scaffold:imports
 )
 
