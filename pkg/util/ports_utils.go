@@ -26,7 +26,7 @@ func ProcessIngressNetworkPolicy(ports []networksimulatorv1.ConnectionRule) []v1
 }
 
 // processEgressNetworkPolicy
-//returns array of network policy egress rules that are created from device.Spec.DeviceEgressRules
+// returns array of network policy egress rules that are created from device.Spec.DeviceEgressRules
 func ProcessEgressNetworkPolicy(ports []networksimulatorv1.ConnectionRule) []v12.NetworkPolicyEgressRule {
 	var egress []v12.NetworkPolicyEgressRule
 	for _, deviceEgressPort := range ports {
@@ -43,7 +43,7 @@ func ProcessEgressNetworkPolicy(ports []networksimulatorv1.ConnectionRule) []v12
 	return egress
 }
 
-//processNetworkPolicyPeer creates array of network policy pear from device port struct
+// processNetworkPolicyPeer creates array of network policy pear from device port struct
 func processNetworkPolicyPeer(ports networksimulatorv1.ConnectionRule) []v12.NetworkPolicyPeer {
 	var peers []v12.NetworkPolicyPeer
 
