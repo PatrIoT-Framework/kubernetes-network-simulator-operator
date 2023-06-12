@@ -1,4 +1,4 @@
-module github.com/jsmadis/kubernetes-network-simulator-operator
+module github.com/PatrIoT-Framework/kubernetes-network-simulator-operator
 
 go 1.15
 

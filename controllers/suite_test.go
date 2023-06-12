@@ -30,7 +30,7 @@ import (
 	logf "sigs.k8s.io/controller-runtime/pkg/log"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	networksimulatorv1 "github.com/jsmadis/kubernetes-network-simulator-operator/api/v1"
+	networksimulatorv1 "github.com/PatrIoT-Framework/kubernetes-network-simulator-operator/api/v1"
 	//+kubebuilder:scaffold:imports
 )
 

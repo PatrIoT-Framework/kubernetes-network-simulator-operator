@@ -18,9 +18,10 @@ package controllers
 
 import (
 	"context"
+
+	networksimulatorv1 "github.com/PatrIoT-Framework/kubernetes-network-simulator-operator/api/v1"
+	"github.com/PatrIoT-Framework/kubernetes-network-simulator-operator/pkg/util"
 	"github.com/go-logr/logr"
-	networksimulatorv1 "github.com/jsmadis/kubernetes-network-simulator-operator/api/v1"
-	"github.com/jsmadis/kubernetes-network-simulator-operator/pkg/util"
 	v1 "k8s.io/api/core/v1"
 	v12 "k8s.io/api/networking/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
