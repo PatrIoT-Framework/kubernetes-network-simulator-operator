@@ -13,6 +13,10 @@ RUN go mod download
 COPY main.go main.go
 COPY api/ api/
 COPY controllers/ controllers/
+# https://github.com/kubernetes-sigs/kubebuilder-declarative-pattern/blob/master/docs/addon/walkthrough/README.md#adding-a-manifest
+# Stage channels and make readable
+COPY channels/ /channels/
+RUN chmod -R a+rx /channels/
 COPY pkg pkg/
 
 # Build
@@ -23,6 +27,8 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GO111MODULE=on go build -a -o manager 
 FROM gcr.io/distroless/static:nonroot
 WORKDIR /
 COPY --from=builder /workspace/manager .
+# copy channels
+COPY --from=builder /channels /channels
 USER 65532:65532
 
 ENTRYPOINT ["/manager"]

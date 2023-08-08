@@ -18,12 +18,13 @@ package controllers
 
 import (
 	"context"
+	"time"
+
+	networksimulatorv1 "github.com/PatrIoT-Framework/kubernetes-network-simulator-operator/api/v1"
 	"github.com/go-logr/logr"
-	networksimulatorv1 "github.com/jsmadis/kubernetes-network-simulator-operator/api/v1"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	ctrl "sigs.k8s.io/controller-runtime"
-	"time"
 )
 
 // ManageNamespaceLogic manage all logic about namespace for network

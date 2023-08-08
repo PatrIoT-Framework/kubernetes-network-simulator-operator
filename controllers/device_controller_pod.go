@@ -18,15 +18,16 @@ package controllers
 
 import (
 	"context"
+	"time"
+
+	networksimulatorv1 "github.com/PatrIoT-Framework/kubernetes-network-simulator-operator/api/v1"
+	"github.com/PatrIoT-Framework/kubernetes-network-simulator-operator/pkg/util"
 	"github.com/go-logr/logr"
-	networksimulatorv1 "github.com/jsmadis/kubernetes-network-simulator-operator/api/v1"
-	"github.com/jsmadis/kubernetes-network-simulator-operator/pkg/util"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/equality"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 	ctrl "sigs.k8s.io/controller-runtime"
-	"time"
 )
 
 // ManageDevicePodLogic manages all logic for device controller about pod, creating, updating deleting...
